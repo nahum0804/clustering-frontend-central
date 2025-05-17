@@ -16,13 +16,24 @@ const Login = () => {
 
   return (
     <div className="min-h-screen bg-[#e9e8ff] flex items-center justify-center">
-      <Card className="w-full max-w-md">
-        <Title>Iniciar Sesión</Title>
-        <form onSubmit={handleLogin} className="space-y-4">
-          <Input placeholder="Usuario" />
-          <Input type="password" placeholder="Contraseña" />
-          <Button type="submit">Entrar</Button>
-        </form>
+      <Card className="w-full max-w-md p-8">
+        <div className="flex flex-col items-center">
+          <Title className="mb-6">Iniciar Sesión</Title>
+          <form onSubmit={handleLogin} className="w-full space-y-6">
+            <Input 
+              placeholder="Usuario" 
+              className="text-black" // Añade texto negro
+            />
+            <Input 
+              type="password" 
+              placeholder="Contraseña" 
+              className="text-black" // Añade texto negro
+            />
+            <div className="flex justify-center">
+              <Button type="submit">Entrar</Button>
+            </div>
+          </form>
+        </div>
       </Card>
     </div>
   );
