@@ -22,12 +22,12 @@ const Login = () => {
           <form onSubmit={handleLogin} className="w-full space-y-6">
             <Input 
               placeholder="Usuario" 
-              className="text-black" 
+              className="text-black mx-auto w-full" 
             />
             <Input 
               type="password" 
               placeholder="Contraseña" 
-              className="text-black"
+              className="text-black mx-auto w-full"
             />
             <div className="flex justify-center">
               <Button type="submit">Entrar</Button>

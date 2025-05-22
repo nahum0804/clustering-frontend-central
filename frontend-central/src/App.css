@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.react-select-container {
+  width: 100%;
+}
+.react-select__control {
+  border: 1px solid #d1d5db !important;
+  min-height: 42px !important;
+}
+.react-select__menu {
+  z-index: 10 !important;
+}
