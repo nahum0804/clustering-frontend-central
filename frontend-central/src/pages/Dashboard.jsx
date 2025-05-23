@@ -1,8 +1,9 @@
 import React from 'react';
 import ClientForm from '../components/ClientForm';
 import Payments from '../components/Payments';
-import QRGenerator from '../components/QRGenerator';
+import ShipmentRegistry from '../components/ShipmentRegistry';
 import NodeRegistry from '../components/NodeRegistry';
+import ShipmentHistory from '../components/ShipmentHistory';
 
 const Dashboard = () => {
   return (
@@ -21,7 +22,12 @@ const Dashboard = () => {
 
       <section>
         <h2 className="text-xl font-semibold mb-2 text-white">Generar Código QR para Envíos</h2>
-        <QRGenerator />
+        <ShipmentRegistry />
+      </section>
+
+      <section>
+        <h2 className="text-xl font-semibold mb-2 text-white">Historial General de Envíos</h2>
+        <ShipmentHistory />
       </section>
 
       <section>
