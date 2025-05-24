@@ -8,7 +8,7 @@ const ShipmentHistory = () => {
   useEffect(() => {
     const fetchEnvios = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:8000/api/historial_general_envios/');
+        const response = await fetch('http://172.24.104.248:8000/api/historial_envios/');
         if (!response.ok) throw new Error('Error al cargar el historial de envíos');
         const data = await response.json();
         setEnvios(data);

@@ -18,7 +18,7 @@ const ShipmentRegistry = () => {
   useEffect(() => {
     const fetchClientes = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:8000/api/clientes/');
+        const response = await fetch('http://172.24.104.248:8000/api/clientes/');
         if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
         const data = await response.json();
         setClientes(data);
@@ -53,7 +53,7 @@ const ShipmentRegistry = () => {
     };
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/historial_envios/', {
+      const response = await fetch('http://172.24.104.248:8000/api/historial_envios/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(envioData),

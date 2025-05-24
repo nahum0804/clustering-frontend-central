@@ -38,7 +38,7 @@ const NodeRegistry = () => {
     console.log('Enviando nodo al backend:', dataToSend);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/nodos/', {
+      const response = await fetch('http://172.24.104.248:8000/api/nodos/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

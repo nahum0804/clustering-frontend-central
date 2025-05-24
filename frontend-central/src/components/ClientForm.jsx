@@ -25,7 +25,7 @@ const ClientForm = () => {
     setSuccess(false);
     
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/clientes/', {
+      const response = await fetch('http://172.24.104.248:8000/api/clientes/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
